@@ -188,8 +188,7 @@ export default function Home({ blogs }) {
       <Container className="mt-9">
         <div className="max-w-4xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Inventor, software developer, history buff and a budding
-            entrepreneur.
+            Software Professional
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             Greetings, I&apos;m Somnath, a seasoned software developer and
