@@ -1,4 +1,4 @@
-# Mehul Thakkar
+# Somnath Pawar
 
 ## Getting started
 

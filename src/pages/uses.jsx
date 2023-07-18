@@ -32,7 +32,7 @@ export default function Uses() {
   return (
     <>
       <Head>
-        <title>Uses - Mehul Thakkar</title>
+        <title>Uses - Somnath Pawar</title>
         <meta
           name="description"
           content="Software I use, tools I love, and other things I recommend."

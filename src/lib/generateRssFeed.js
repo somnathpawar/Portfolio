@@ -8,8 +8,8 @@ export async function generateRssFeed() {
   let blogs = await getAllBlogs();
   let siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
   let author = {
-    name: 'Mehul Thakkar',
-    email: 'mehulthakkar02@gmail.com',
+    name: 'Somnath Pawar',
+    email: 'info.somnathpawar@gmail.com',
   };
 
   let feed = new Feed({

@@ -116,13 +116,12 @@ function MobileNavigation(props) {
                 <CloseIcon className="h-6 w-6 text-zinc-500 dark:text-zinc-400" />
               </Popover.Button>
               <h2 className="text-sm font-medium text-zinc-600 dark:text-zinc-400">
-                Mehul Thakkar
+                Somnath Pawar
               </h2>
             </div>
             <nav className="mt-6">
               <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
                 <MobileNavItem href="/about">About</MobileNavItem>
-                <MobileNavItem href="/patent">Patent</MobileNavItem>
                 <MobileNavItem href="/blogs">Blogs</MobileNavItem>
                 {/*<MobileNavItem href="/projects">Projects</MobileNavItem>*/}
                 <MobileNavItem href="/uses">Uses</MobileNavItem>
@@ -163,7 +162,6 @@ function DesktopNavigation(props) {
     <nav {...props}>
       <ul className="flex rounded-full bg-white/20 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-gray-900/20 dark:text-zinc-200 dark:ring-white/10">
         <NavItem href="/about">About</NavItem>
-        <NavItem href="/patent">Patent</NavItem>
         <NavItem href="/blogs">Blogs</NavItem>
         {/*<NavItem href="/projects">Projects</NavItem>*/}
         <NavItem href="/uses">Uses</NavItem>

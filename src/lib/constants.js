@@ -1,99 +1,145 @@
 import logoTech9 from '@/images/logos/tech9.png';
-import logoRCM from '@/images/logos/rcm.jpeg';
-import logoPackt from '@/images/logos/packt.jpeg';
-import logoMerkleSokrati from '@/images/logos/merkleSokrati.jpeg';
-import logoCognizant from '@/images/logos/cognizant.jpeg';
-import logoBits from '@/images/logos/bits.jpeg';
-import logoGTU from '@/images/logos/gtu.jpeg';
-import logoAWS from '@/images/logos/aws.jpeg';
+import logoQS from '@/images/logos/qs.jpg';
+import logoIdha from '@/images/logos/idhasoft.jpg';
+import logoNelito from '@/images/logos/nelito.jpg';
+import logoLivetek from '@/images/logos/livetek.jpg';
+import logoCkad from '@/images/logos/ckad.png';
+import logoTechAccred from '@/images/logos/technical-accred.png';
+import logoDevAssos from '@/images/logos/developer-associate.png';
+import logoSAAssos from '@/images/logos/sa-associate.png';
+import logoSysOps from '@/images/logos/sysops-admin.png';
+import logoSAPro from '@/images/logos/sa-professional.png';
+import logoSecurity from '@/images/logos/security-specialty.png';
+import logoPractitioner from '@/images/logos/practitioner.png';
 
 export const WORK = [
   {
     company: 'Tech9',
-    title: 'Software Engineer',
+    title: 'Sr. Solutions Architect',
     logo: logoTech9,
-    start: 'Aug 2016',
+    start: 'Feb 2017',
     end: {
       label: 'Present',
       dateTime: new Date().getFullYear(),
     },
   },
   {
-    company: 'Red Canyon Media',
-    title: 'Software Engineer',
-    logo: logoRCM,
-    start: 'Jul 2019',
+    company: 'Quinstreet Software Private Limited',
+    title: 'Technical Lead',
+    logo: logoQS,
+    start: 'Jan 2012',
     end: {
-      label: 'Present',
+      label: 'Jan 2017',
       dateTime: new Date().getFullYear(),
     },
   },
   {
-    company: 'Packt',
-    title: 'Technical Reviewer',
-    logo: logoPackt,
-    start: 'Oct 2018',
-    end: 'Jan 2019',
+    company: 'Idhasoft',
+    title: 'Sr. Software Engineer',
+    logo: logoIdha,
+    start: 'May 2011',
+    end: 'Jan 2012',
   },
   {
-    company: 'Merkle Sokrati',
-    title: 'Software Engineer | FED',
-    logo: logoMerkleSokrati,
-    start: 'Oct 2015',
-    end: 'Aug 2016',
+    company: 'Smartsourcing Global',
+    title: 'Sr. Software Developer',
+    start: 'May 2010',
+    end: 'May 2011',
   },
   {
-    company: 'Cognizant',
-    title: 'Programmer Analyst',
-    logo: logoCognizant,
-    start: 'Feb 2014',
-    end: 'Oct 2015',
+    company: 'Nelito Systems Pvt. Ltd.',
+    title: 'Sr. Software Engineer',
+    logo: logoNelito,
+    start: 'Nov 2009',
+    end: 'April 2010',
   },
   {
-    company: 'Xcellance Techno Labs Pvt. Ltd.',
+    company: 'Livetek Solutions',
+    title: 'Web Developer',
+    logo: logoLivetek,
+    start: 'April 2008',
+    end: 'Oct 2009',
+  },
+  {
+    company: 'Can & Will Softwares',
     title: 'Intern',
-    start: 'Jul 2012',
-    end: 'May 2013',
-  },
-];
-
-export const EDUCATION = [
-  {
-    company: 'Birla Institute of Technology and Science, Pilani',
-    title: 'M.Tech, Data Science & Engineering',
-    logo: logoBits,
-    start: 'Mar 2022',
-    end: {
-      label: 'Present',
-      dateTime: new Date().getFullYear(),
-    },
-  },
-  {
-    company: 'Gujarat Technological University, Ahmedabad',
-    title: 'B.E, Computer Science & Engineering',
-    logo: logoGTU,
-    start: '2009',
-    end: '2013',
+    start: 'Jul 2007',
+    end: 'Mar 2008',
   },
 ];
 
 export const CERTIFICATIONS = [
   {
+    company: 'AWS Certified Security - Specialty',
+    title: 'Amazon Web Services',
+    logo: logoSecurity,
+    start: 'Dec 2022',
+    end: 'Dec 2025',
+    href: 'https://www.credly.com/earner/earned/badge/01a6cbc7-4fca-4d9d-a687-1fa190c07e31',
+    credential: '42MHH3NC5JE11CCR',
+  },
+  {
+    company: 'AWS Certified Solutions Architect - Professional',
+    title: 'Amazon Web Services',
+    logo: logoSAPro,
+    start: 'Jun 2021',
+    end: 'Jun 2024',
+    href: 'https://www.credly.com/badges/e8e198a8-55e6-43c5-9c54-4de6ea19a969',
+    credential: '9FM34Z3BBMV11L5F',
+  },
+  {
+    company: 'CKAD: Certified Kubernetes Application Developer',
+    title: 'The Linux Foundation',
+    logo: logoCkad,
+    start: 'April 2022',
+    end: 'April 2025',
+    href: 'https://www.credly.com/badges/2d9eb564-e86c-4845-b92c-a5f19b685b9b',
+    credential: 'LF-cm3nzlagt6',
+  },
+  {
+    company: 'AWS Certified SysOps Administrator – Associate',
+    title: 'Amazon Web Services',
+    logo: logoSysOps,
+    start: 'Jun 2021',
+    end: 'Jun 2024',
+    href: 'https://www.credly.com/badges/b2070a20-549b-4e4b-9dca-af07a7627fe1 ',
+    credential: 'C4C0TCYDDMR1Q7KR',
+  },
+  {
     company: 'AWS Certified Solutions Architect - Associate',
     title: 'Amazon Web Services',
-    logo: logoAWS,
-    start: 'Mar 2021',
-    end: 'Mar 2024',
-    href: 'https://aw.certmetrics.com/amazon/public/verification.aspx',
-    credential: '0K1KG49B1M14QMW8',
+    logo: logoSAAssos,
+    start: 'Jun 2018',
+    end: 'Jun 2024',
+    href: 'https://www.credly.com/badges/46a1eee5-826d-4b6f-bed0-da44880167ca',
+    credential: 'J38939WCDF111LGF',
+  },
+  {
+    company: 'AWS Certified Developer - Associate',
+    title: 'Amazon Web Services',
+    logo: logoDevAssos,
+    start: 'Jun 2018',
+    end: 'Jun 2021',
+    href: 'https://www.credly.com/badges/fedf7427-0c4c-47a7-9e35-7cfa1ff4cf80',
+    credential: 'R122LNQKJ2E1QYCW',
   },
   {
     company: 'AWS Certified Cloud Practitioner',
     title: 'Amazon Web Services',
-    logo: logoAWS,
-    start: 'Aug 2019',
-    end: 'Mar 2024',
-    href: 'https://aw.certmetrics.com/amazon/public/verification.aspx',
+    logo: logoPractitioner,
+    start: 'Jun 2022',
+    end: 'Jun 2025',
+    href: 'https://www.credly.com/badges/928b947c-4d9f-4fc6-8a84-1b36451e474f',
+    credential: 'YGHS6VLLF1EQQZ98',
+  },
+
+  {
+    company: 'AWS Partner: Accreditation (Technical)',
+    title: 'Amazon Web Services',
+    logo: logoTechAccred,
+    start: 'Feb 2023',
+    end: '',
+    href: 'https://www.credly.com/earner/earned/badge/7b1ded70-86b7-4cf0-afa7-fe894ad830a3',
     credential: 'RKHXX4WCMEE1QDWW',
   },
 ];
@@ -115,26 +161,6 @@ export const TOOLS_AND_TECH = [
           '              learning new things every day.',
       },
       {
-        id: 2,
-        title: 'React JS',
-        href: 'https://reactjs.org/',
-        description:
-          ' It&apos;s not the newest kid on the block anymore, but it&apos;s\n' +
-          '              one of the best out there, I&apos;ve been using React for\n' +
-          '              <b>over 7 years</b> now and I&apos;ve built a lot of apps with it.\n' +
-          '              The comfort and familiarity of React makes it a joy to work with.',
-      },
-      {
-        id: 3,
-        title: 'Next',
-        href: 'https://nextjs.org/',
-        description:
-          'Next is taking the React ecosystem to the Next* level by storm.\n' +
-          '              It&apos;s a great tool for building static and server-rendered\n' +
-          '              applications using React. I have been using Next for\n' +
-          '              <b>over 4 years.</b>',
-      },
-      {
         id: 4,
         title: 'Angular JS',
         href: 'https://angularjs.org/',
@@ -150,60 +176,59 @@ export const TOOLS_AND_TECH = [
     technologies: [
       {
         id: 1,
-        title: 'NodeJS',
-        href: 'https://nodejs.org/',
+        title: 'PHP',
+        href: 'https://php.net/',
         description:
-          'NodeJS is a great framework for building server-side applications.\n' +
-          '              I&apos;ve been using NodeJS for <b>over 7 years</b> with REST and\n' +
-          '              GraphQL APIs.',
+          'PHP is a great language for building server-side applications.\n' +
+          '              I&apos;ve been using PHP for <b>over 15 years</b>.\n' +
+          '              Created lots of web application/sites into various domains',
       },
       {
-        id: 2,
-        title: 'GraphQL',
-        href: 'https://graphql.org/',
+        id: 3,
+        title: 'ROR',
+        href: 'https://go.dev/',
         description:
-          'After using REST APIs for a long time, I felt like there should be\n' +
-          '              a better way to fetch only the data that I need. GraphQL is that\n' +
-          '              better way. I&apos;ve been using GraphQL for <b>over 5 years</b>\n' +
-          '              now.',
+          'Ruby on Rails is a great web application building framework,  I used it for few projects.',
       },
       {
         id: 3,
         title: 'GoLang',
         href: 'https://go.dev/',
         description:
-          'NodeJS is great for building server-side applications, but I\n' +
-          '              struggled with performance and scaling. Go came to my rescue to\n' +
-          '              help me build performant and scalable applications. I&apos;ve been\n' +
-          '              using Go for <b>around 2 years</b> now.',
+            'Recently I stated using GoLang into existing project where I wanted the performance',
       },
       {
         id: 4,
-        title: 'Rust / Wasm',
+        title: 'Bash',
         href: 'https://www.rust-lang.org/',
         description:
-          'I&apos;ve recently started learning Rust and WebAssembly. This\n' +
-          '              combination is game changer, At times I feel like I&apos;m writing\n' +
-          '              C code in Javascript which puts front-end performance on steroid.\n' +
-          '              I&apos;ve been using Rust for <b>around 1 year</b> now.',
+          'I&apos;ve been using bash scripting from long time. Bash scripting helped me for automating repetitive tasks and make their workflow more efficient.\n' +
+          '              As a devops person it helps me on daily basis.',
       },
     ],
   },
   {
     id: 3,
-    title: 'Fullstack Framework? (Maybe)',
+    title: 'Frameworks',
     technologies: [
       {
         id: 1,
-        title: 'Remix',
-        href: 'https://remix.run/',
+        title: 'Symfony',
+        href: 'https://symfony.com/',
         description:
-          'Since initial discussions about React Server Components I was very\n' +
-          '              excited to see how it would change the way we build web\n' +
-          '              applications, but before it was released Remix made a grand entry\n' +
-          '              into the scene. Remix looks like a fullstack framework for\n' +
-          '              building server-rendered applications using React. I&apos;ve been\n' +
-          '              using Remix for my pet projects to learn more about it.',
+          'Symfony is a feature-rich back-end framework that is used to build complex applications\n' +
+          '              The framework provides a range of tools and features specifically designed for building\n'+
+          '               scalable PHP web applications, including support for multiple environments and a robust caching system\n' +
+          '              I have been using Symfony for more than 5 years.',
+      },
+      {
+        id: 1,
+        title: 'CodeIgnitor',
+        href: 'https://codeigniter.com/',
+        description:
+            'CodeIgniter is an open-source software rapid development web framework, for use in building dynamic web sites with PHP.\n' +
+            'It makes it easier for programmers to write secure PHP applications by providing several features.\n' +
+            'I worked on CodeIgniter for around 4 years and with multiple projects.'
       },
     ],
   },
@@ -236,6 +261,15 @@ export const TOOLS_AND_TECH = [
           '              NoSQL database. Though I&apos;ve used it for a short period of\n' +
           '              time, I&apos;ve found it to be a useful one.',
       },
+      {
+        id: 3,
+        title: 'Redis',
+        href: 'https://redis.io',
+        description:
+            'For caching purpose, I have been using Redis on multiple projects\n' +
+            '              One of the main advantages of Redis is its in-memory storage, \n' +
+            '              which allows it to provide fast access to data and high performance.',
+      },
     ],
   },
   {
@@ -248,30 +282,65 @@ export const TOOLS_AND_TECH = [
         href: 'https://aws.amazon.com/',
         description:
           ' I&apos;ve extensively used AWS for building and deploying\n' +
-          '              applications with several AWS services. I&apos;m an\n' +
-          '              <b>AWS Certified Solutions Architect - Associate.</b>',
+          '              applications with several AWS services. I&apos;m having 7x \n' +
+          '              <b>AWS certifications including top ones such as Solutions Architect Professional & Security Specialty.</b>',
       },
       {
         id: 2,
-        title: 'Serverless Architecture',
-        href: 'https://sst.dev/',
+        title: 'Kubernetes',
+        href: 'https://kubernetes.io/',
         description:
-          ' I&apos;ve used serverless architecture to build and deploy variety\n' +
-          '              of application including my pet projects and Alexa skills. These\n' +
-          '              days I&apos;m getting familiar with CDK to build serverless\n' +
-          '              applications.',
+            ' I&apos;m extensively using K8s for building applications.\n' +
+            '              Have a great experieice of using it with AWS EKS. \n' +
+            '              I have created many services and applications into K8s' +
+            '              <b>I am also a Certified Kubernetes Application Developer.</b>',
       },
       {
         id: 3,
-        title: 'Netlify',
-        href: 'https://www.netlify.com/',
+        title: 'Docker',
+        href: 'https://docker.io/',
         description:
-          ' Netlify is a great tool for building and deploying static\n' +
-          '              websites. My primary usage includes deployment of static websites\n' +
-          '              to netlify.',
+            ' I&apos;ve extensively used Docker for building containerised applications.\n' +
+            '              Using it for more than 7 years',
       },
       {
         id: 4,
+        title: 'Terraform',
+        href: 'https://www.terraform.io/',
+        description:
+          ' I have been recently working on Terraform to automate the infrastructure for one of projects\n' +
+          '              Also side by side, I am preparing for an official Terraform associate certification.',
+      },
+      {
+        id: 4,
+        title: 'Ansible',
+        href: 'https://ansible.com/',
+        description:
+            ' Ansible can configure systems, deploy software, and orchestrate advanced workflows to support \n' +
+            ' application deployment, system updates, and more. Ansible&apos;s main strengths are simplicity and ease of use.\n' +
+            'I&apos;ve been using Ansible for more than 4 years.'
+      },
+      {
+        id: 4,
+        title: 'AWS CDK',
+        href: 'https://aws.amazon.com/cdk/',
+        description:
+            'The AWS Cloud Development Kit (AWS CDK) is an open-source software development framework for defining \n' +
+            ' cloud infrastructure as code with modern programming languages and deploying it through AWS CloudFormation..\n' +
+            'I&apos;ve been using CDK for few of client projects'
+      },
+      {
+        id: 5,
+        title: 'Serverless Framework',
+        href: 'https://www.serverless.com\n',
+        description:
+            ' I&apos;ve used serverless framework to build and deploy few\n' +
+            '              of the applications. These\n' +
+            '              days I&apos;m getting familiar with CDK to build serverless\n' +
+            '              applications. Used it for few serverless hackathon projects and own the first price for one of it.',
+      },
+      {
+        id: 6,
         title: 'Vercel',
         href: 'https://vercel.com/',
         description:
@@ -282,35 +351,27 @@ export const TOOLS_AND_TECH = [
   },
   {
     id: 6,
-    title: 'Headless CMS',
+    title: 'CMS',
     technologies: [
       {
         id: 1,
-        title: 'Contentful',
-        href: 'https://www.contentful.com/',
+        title: 'Drupal',
+        href: 'https://drupal.org/',
         description:
-          'My first interaction with a headless CMS was with Contentful.\n' +
+          'Drupal is an open source platform for building amazing digital experiences.\n' +
           '              I&apos;ve fallen in to love with the ease of use and the\n' +
-          '              flexibility it provides. I&apos;ve used contentful for several\n' +
-          '              marketing websites for my clients.',
+          '              flexibility it provides. I&apos;ve used Drupal for several\n' +
+          '               websites into various domains for my clients.',
       },
       {
         id: 2,
-        title: 'Strapi',
-        href: 'https://strapi.io/',
+        title: 'Joomla',
+        href: 'https://www.joomla.org/',
         description:
-          'Strapi is an open-source headless CMS. It&apos;s a great\n' +
-          '              alternative to Contentful. I&apos;ve used Strapi for my pet\n' +
-          '              projects.',
-      },
-      {
-        id: 3,
-        title: 'Swell',
-        href: 'https://www.swell.is/',
-        description:
-          'Swell is a headless e-commerce platform. I&apos;ve used Swell for\n' +
-          '              my pet projects.',
-      },
+          'Joomla! is a free and open-source content management system (CMS) for publishing web content\n' +
+          '              I&apos;ve used Joomla for several\n' +
+            '               websites into various domains for my clients',
+      }
     ],
   },
   {
@@ -357,31 +418,26 @@ export const TOOLS_AND_TECH = [
     technologies: [
       {
         id: 1,
-        title: 'IntelliJ IDEA',
-        href: 'https://www.jetbrains.com/idea/',
+        title: 'Visual Studio Code',
+        href: 'https://code.visualstudio.com/',
         description:
-          'IntelliJ IDE is one stop solution for most of my development\n' +
+          'Visual Studio Code IDE is one stop solution for most of my development\n' +
           '              needs.',
       },
       {
         id: 2,
-        title: 'iTerm2',
-        href: 'https://iterm2.com/',
+        title: 'Warp',
+        href: 'https://www.warp.dev/',
         description:
-          'I&apos;m honestly not even sure what features I get with this that\n' +
-          '              aren&apos;t just part of the macOS Terminal but it&apos;s what I\n' +
-          '              use. Though I would like to give a try to Warp.',
+          'I&apos;m using Warp from long time instead of basic terminal.',
       },
       {
         id: 3,
-        title: 'Notion',
-        href: 'https://www.notion.so/',
+        title: 'Jetbrains PHPStorm',
+        href: 'https://www.jetbrains.com/phpstorm/',
         description:
-          'Notion is a lifesaver app for me with so many features. Shout out\n' +
-          '              to the Notion team for building such a great app.',
+          'PHPStorm is a great IDE for PHP development',
       },
     ],
   },
 ];
-
-export const PATENT_DATE = '2022-05-31';

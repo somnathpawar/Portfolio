@@ -33,7 +33,7 @@ export function BlogLayout({
   return (
     <>
       <Head>
-        <title>{`${meta.title} - Mehul Thakkar`}</title>
+        <title>{`${meta.title} - Somnath Pawar`}</title>
         <meta name="description" content={meta.description} />
       </Head>
       <Container className="mt-16 lg:mt-32">

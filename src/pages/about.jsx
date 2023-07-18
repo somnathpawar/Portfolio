@@ -33,10 +33,10 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About - Mehul Thakkar</title>
+        <title>About - Somnath Pawar</title>
         <meta
           name="description"
-          content="I'm Mehul Thakkar. I'm a software engineer, lives in Pune India."
+          content="I'm Somnath Pawar. I'm a software professional, lives in Pune India."
         />
       </Head>
       <Container className="mt-16 sm:mt-32">
@@ -53,7 +53,7 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I&apos;m Mehul Thakkar. A Software Engineer, lives in Pune, India.
+              I&apos;m Somnath Pawar. A Software Professional, lives in Pune, India.
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
@@ -84,14 +84,14 @@ export default function About() {
           <div className="lg:pl-20">
             <ul role="list">
               <SocialLink
-                href="https://github.com/mehulcse"
+                href="https://github.com/somnathpawar"
                 aria-label="Follow on GitHub"
                 icon={GitHubIcon}
               >
                 Follow on GitHub
               </SocialLink>
               <SocialLink
-                href="https://www.linkedin.com/in/mehulcse/"
+                href="https://www.linkedin.com/in/somnathpawar/"
                 aria-label="Follow on LinkedIn"
                 icon={LinkedInIcon}
                 className="mt-4"
@@ -99,7 +99,7 @@ export default function About() {
                 Follow on LinkedIn
               </SocialLink>
               <SocialLink
-                href="https://stackoverflow.com/users/6888239/mehul-thakkar"
+                href="https://stackoverflow.com/users/745350/somnath-pawar"
                 aria-label="Follow on Stackoverflow"
                 icon={StackOverflowIcon}
                 className="mt-4"
@@ -107,26 +107,18 @@ export default function About() {
                 Follow on Stackoverflow
               </SocialLink>
               <SocialLink
-                href="https://twitter.com/mehulcse"
-                aria-label="Follow on Twitter"
-                icon={TwitterIcon}
-                className="mt-4"
-              >
-                Follow on Twitter
-              </SocialLink>
-              <SocialLink
-                href="mailto:mehulthakkar02@gmail.com"
+                href="mailto:info.somnathpawar@gmail.com"
                 icon={MailIcon}
                 className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
               >
-                mehulthakkar02@gmail.com
+                info.somnathpawar@gmail.com
               </SocialLink>
               <SocialLink
-                href="tel:+918148541652"
+                href="tel:+919890984420"
                 icon={PhoneIcon}
                 className="mt-4"
               >
-                (+91) 814-854-1652
+                (+91) 989-098-4420
               </SocialLink>
             </ul>
           </div>

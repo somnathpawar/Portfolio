@@ -1,7 +1,7 @@
 {
   "name": "my-portfolio",
   "version": "0.1.0",
-  "author": "Mehul Thakkar <mehulthakkar02@gmail.com>",
+  "author": "Somnath Pawar <info.somnathpawar@gmail.com>",
   "private": false,
   "scripts": {
     "dev": "next dev",
