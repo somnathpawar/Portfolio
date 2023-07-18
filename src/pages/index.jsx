@@ -119,8 +119,6 @@ function Resume({ resume, title, showDownload }) {
             <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
                 {title === 'Work' ? (
                     <BriefcaseIcon className="h-6 w-6 flex-none" />
-                ) : title === 'Education' ? (
-                    <EducationIcon className="h-6 w-6 flex-none" />
                 ) : (
                     <CertificateIcon className="h-6 w-6 flex-none" />
                 )}
@@ -192,7 +190,6 @@ export default function Home({ blogs }) {
                         />
                     </div>
                 </div>
-                <Patent />
             </Container>
             <Container className="md:mt-18 mt-16">
                 <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
@@ -204,7 +201,6 @@ export default function Home({ blogs }) {
                     <div className="space-y-10 lg:pl-16 xl:pl-24">
                         <Resume resume={CERTIFICATIONS} title="Certifications" />
                         <Resume resume={WORK} showDownload title="Work" />
-                        <Resume resume={EDUCATION} showDownload={false} title="Education" />
                     </div>
                 </div>
             </Container>
