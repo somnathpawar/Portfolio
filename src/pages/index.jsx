@@ -159,7 +159,7 @@ export default function Home({ blogs }) {
             <Container className="mt-9">
                 <div className="max-w-4xl">
                     <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-                        Inventor, software developer, history buff and a budding
+                        Architect, Software developer, history lover and a budding
                         entrepreneur.
                     </h1>
                     <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
@@ -169,7 +169,7 @@ export default function Home({ blogs }) {
                         applications and dynamic websites that thrive in high-speed,
                         collaborative settings. My expertise lies in an array of programming
                         languages and technologies, including but not limited to PHP, ROR, JavaScript
-                        (JS), GoLang, DevOps, Cloud Architecting. In addition, I am
+                        (JS), GoLang, DevOps, Kubernetes, Cloud Architecting. In addition, I am
                         proficient in AWS and hold 7x AWS Certifications.
                     </p>
                     <div className="mt-6 flex gap-6">
