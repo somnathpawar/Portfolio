@@ -61,11 +61,8 @@ export default function About() {
                 wrote my first program in BASIC.
               </p>
               <p>
-                The only thing I loved more than computers as a kid was History
-                and Mathematics. I have always been fascinated by the way the world
-                has traveled through time and how it works. Programming is the
-                perfect marriage of these two passions. I get to build things
-                that change the world and understand how they work.
+                Aside from programming, I enjoy long drives, books, and spending quality time with my family and friends.
+                I am a social person that is always looking to expand my network.
               </p>
               <p>
                 Professionally, I&apos;ve been a software engineer for over 15
