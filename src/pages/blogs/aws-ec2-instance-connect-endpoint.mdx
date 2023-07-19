@@ -17,7 +17,7 @@ export const meta = {
 export default (props) => <BlogLayout meta={meta} {...props} />
 
 <Image src={BlogEICArchitecture} alt="EIC endpoint connection architecture" />
-AWS provided many methods for connecting to your running EC2 instances. They are EC2 instance connect (only for public IP instances),
+AWS provided several methods for connecting to your running EC2 instances. They are EC2 instance connect (only for public IP instances),
 Systems Manager Session Manager, and bastion hosts. AWS recently announced a new service called <b>EC2 Instance Connect Endpoint</b> in June 2023,
  which essentially delivers better security and lower costs than previous options. In this tutorial, we will look at the benefits of using
   it as well as how to build EIC endpoints and use them to initiate connections.
