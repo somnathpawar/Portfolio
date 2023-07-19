@@ -163,14 +163,13 @@ export default function Home({ blogs }) {
                         entrepreneur.
                     </h1>
                     <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-                        Greetings, I&apos;m Somnath, a seasoned software developer, self-motivated and
-                        creative person residing in Pune. With a 16 years of professional
+                        Greetings! I am Somnath, a seasoned software developer, self-motivated and
+                        creative person from Pune. With a extensive 16+ years of professional
                         experience under my wings, I specialize in crafting intricate
                         applications and dynamic websites that thrive in high-speed,
-                        collaborative settings. My expertise lies in an array of programming
-                        languages and technologies, including but not limited to PHP, ROR, JavaScript
-                        (JS), GoLang, DevOps, Kubernetes, Cloud Architecting. In addition, I am
-                        proficient in AWS and hold 7x AWS Certifications.
+                        collaborative settings. My virtuosity lies in an array of programming
+                        languages and multiple technologies, including but not limited to PHP, ROR, JavaScript
+                        (JS), GoLang, DevOps, Kubernetes, Cloud Architecting. Not to brag :wink I am proficient in AWS and hold 7x AWS Certifications.
                     </p>
                     <div className="mt-6 flex gap-6">
                         <SocialLink

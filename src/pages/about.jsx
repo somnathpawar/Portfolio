@@ -57,22 +57,22 @@ export default function About() {
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                I&apos;ve loved making things for as long as I can remember, I
+                I have loved making things for as long as I can remember, I
                 wrote my first program in BASIC.
               </p>
               <p>
-                Aside from programming, I enjoy long drives, books, and spending quality time with my family and friends.
-                I am a social person that is always looking to expand my network.
+                Apart from programming, I enjoy long drives, books, and spending quality time with my family and friends.
+                I am a social person who is always looking to expand my network.
               </p>
               <p>
-                Professionally, I&apos;ve been a software engineer for over 15
+                Professionally, I have been a software engineer for more than 16
                 years. I&apos;ve worked at startups and large companies, and
-                I&apos;ve worked on everything from mobile apps, web apps to backend
-                services including cloud & devops. I&apos;ve also been a mentor and a
-                tech lead across multiple teams.
+                worked on everything from mobile apps, web apps to backend
+                services including cloud & devops. I am also a mentor and a
+                tech lead across multiple teams on multiple technologies.
               </p>
               <p>
-                Today, I’m a Sr. Solutions Architect at Tech9, where I work with
+                Today, I am a Sr. Solutions Architect at Tech9, where I work with
                 variety of technologies including PHP, Golang, JS, AngularJS, AWS, Kubernetes, Docker, Ansible, Terraform, CDK, Bash,
                 PostgreSQL, MongoDB, Redis and RabbitMQ. I am enthusiastic into cloud computing and devops areas, achieved 7x AWS
                 certifications and Kubernetes CKAD certification. I love architecting things and see them implemented in a right way.
