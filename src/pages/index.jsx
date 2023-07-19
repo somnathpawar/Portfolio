@@ -19,6 +19,7 @@ import { getAllBlogs } from '@/lib/getAllBlogs';
 import { formatDate } from '@/lib/formatDate';
 import { CERTIFICATIONS, WORK } from '@/lib/constants';
 import clsx from 'clsx';
+import WinkImage from '@/images/photos/wink.png';
 
 function ArrowDownIcon(props) {
     return (
@@ -144,6 +145,7 @@ function Resume({ resume, title, showDownload }) {
     );
 }
 
+
 export default function Home({ blogs }) {
     return (
         <>
@@ -169,7 +171,7 @@ export default function Home({ blogs }) {
                         applications and dynamic websites that thrive in high-speed,
                         collaborative settings. My virtuosity lies in an array of programming
                         languages and multiple technologies, including but not limited to PHP, ROR, JavaScript
-                        (JS), GoLang, DevOps, Kubernetes, Cloud Architecting. Not to brag :wink I am proficient in AWS and hold 7x AWS Certifications.
+                        (JS), GoLang, DevOps, Kubernetes, Cloud Architecting. Not to brag <Image style={{display: "inline", width: "20px"}} src={WinkImage} alt="wink"/> I am proficient in AWS and hold 7x AWS Certifications.
                     </p>
                     <div className="mt-6 flex gap-6">
                         <SocialLink
