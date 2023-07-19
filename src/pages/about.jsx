@@ -74,8 +74,8 @@ export default function About() {
               <p>
                 Today, I am a Sr. Solutions Architect at Tech9, where I work with
                 variety of technologies including PHP, Golang, JS, AngularJS, AWS, Kubernetes, Docker, Ansible, Terraform, CDK, Bash,
-                PostgreSQL, MongoDB, Redis and RabbitMQ. I am enthusiastic into cloud computing and devops areas, achieved 7x AWS
-                certifications and Kubernetes CKAD certification. I love architecting things and see them implemented in a right way.
+                PostgreSQL, MongoDB, Redis and RabbitMQ. I am enthusiastic into cloud computing, security and devops areas, achieved 7x AWS
+                certifications and Kubernetes CKAD certification. I love architecting things and see them implemented in a right & secure way.
               </p>
             </div>
           </div>
