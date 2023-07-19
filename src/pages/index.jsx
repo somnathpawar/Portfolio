@@ -165,7 +165,7 @@ export default function Home({ blogs }) {
                     <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
                         Greetings, I&apos;m Somnath, a seasoned software developer, self-motivated and
                         creative person residing in Pune. With a 16 years of professional
-                        experience under my belt, I specialize in crafting intricate
+                        experience under my wings, I specialize in crafting intricate
                         applications and dynamic websites that thrive in high-speed,
                         collaborative settings. My expertise lies in an array of programming
                         languages and technologies, including but not limited to PHP, ROR, JavaScript
