@@ -1,0 +1,82 @@
+import Image from 'next/image'
+import {BlogLayout} from '@/components/BlogLayout'
+import BlogEICConsoleConnection from "../../images/photos/aws-console-for-eic-endpoint-connection.png";
+import BlogEICAWSCLIConnection from "../../images/photos/aws-cli-eic-endpoint-connection.png";
+import BlogEICAWSCLIConnectionMade from "../../images/photos/aws-console-eic-endpoint-connection-made.png";
+import BlogEICArchitecture from "../../images/photos/ec2-instance-connect-endpoint.svg";
+
+export const meta = {
+    author: 'Somnath Pawar',
+    email: 'info.somnathpawar@gmail.com',
+    date: '2023-07-19',
+    title: 'EIC Endpoint - Secure & Cost effective Solution',
+    description:
+        'With EIC endpoint, you can connect to your resources hosted into private subnets without needing any public IPs or bastion host.',
+}
+
+export default (props) => <BlogLayout meta={meta} {...props} />
+
+<Image src={BlogEICArchitecture} alt="EIC endpoint connection architecture" />
+AWS provided many methods for connecting to your running EC2 instances. They are EC2 instance connect (only for public IP instances),
+Systems Manager Session Manager, and bastion hosts. AWS recently announced a new service called <b>EC2 Instance Connect Endpoint</b> in June 2023,
+ which essentially delivers better security and lower costs than previous options. In this tutorial, we will look at the benefits of using
+  it as well as how to build EIC endpoints and use them to initiate connections.
+
+Many AWS customers still use public IP addresses on the necessary resources when remotely administering resources inside their VPCs from
+ the Internet, or at best a bastion host strategy combined with long-lived SSH keys. Using public IPs can be partially restricted by using
+  IGW routes and/or security groups. These controls, however, can be difficult to handle in a dynamic environment. As a result, careful
+  management of long-lived SSH keys remains the single layer of defence, which isn't ideal because we all know that these safeguards
+  occasionally fail, thus defense-in-depth is essential. Although bastion hosts might be useful, they considerably raise the operational
+  overhead of administering, patching, and sustaining infrastructure.
+
+## EIC Endpoint overview
+With EIC Endpoints, customers can have remote connectivity to their instances in private subnets, eliminating the need to use public IPv4
+addresses for connectivity. EIC Endpoint eliminates the cost and operational overhead of maintaining bastions. EIC Endpoint combines AWS
+ Identity and Access Management (IAM) based access controls to restrict access to trusted principals, with network based controls such as
+ Security Group rules, and provides an audit of all connections via AWS CloudTrail, helping customers improve their security posture.
+
+## How to create EIC endpoint
+Only one endpoint is required per VPC. To create or modify an endpoint and connect to a resource, a user must have the required
+IAM permissions, and any security groups associated with your VPC resources must have a rule to allow connectivity.
+Refer to the following resources for more details on <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/eice-security-groups.html" target="new">configuring security groups</a> .
+You can create AWS EIC endpoint through AWS console or CLI. For Console, you can refer the official documentation <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-ec2-instance-connect-endpoints.html#create-eice" target="new">here</a>.
+
+## Creating an EIC Endpoint with the AWS CLI
+To create an EIC Endpoint with the AWS CLI, run the following command, replacing <b>[SUBNET]</b> with your subnet ID and <b>[SG-ID]</b> with your security group ID:
+```js
+aws ec2 create-instance-connect-endpoint \
+    --subnet-id [SUBNET] \
+    --security-group-id [SG-ID]
+```
+It will take around 4/5 minutes to create this endpoint and make it available.
+
+## How to connect to the instance using EIC endpoint
+Assume that I have created an instance into my private subnet. That instance's security group has been considered to allow SSH access
+from EIC endpoint security group and VPC CIDR range.
+Now, you get two options for connecting to the private instance using your EIC endpoint.endpoint
+- AWS Console:
+    AWS has provided a GUI to make the connection:
+    <Image src={BlogEICConsoleConnection} alt="AWS Console based connection window" style={{borderRadius: "0"}}   />
+    <figure key='aws' className="break-inside-avoid-column">
+      <Image src={BlogEICAWSCLIConnectionMade} alt="AWS Console based connection made" style={{borderRadius: "0"}}   />
+      <figcaption>
+        <center>AWS Console view upon successful SSH connection to your instance</center>
+      </figcaption>
+    </figure>
+
+
+- AWS CLI Client<br/>
+    You can use `aws ec2-instance-connect ssh` command. By default, it picks your EIC endpoint available into your VPC subnet in which your
+     instance is running.
+<figure key='aws' className="break-inside-avoid-column">
+  <Image src={BlogEICAWSCLIConnection} alt="AWS CLI based connection" style={{borderRadius: "0"}}   />
+  <figcaption>
+    <center>AWS CLI view upon successful SSH connection to your instance</center>
+  </figcaption>
+</figure>
+
+## Conclusion
+
+EIC Endpoint offers a safe way to access to your instances through SSH or RDP on private subnets without the use of IGWs, public IPs,
+agents, or bastion hosts. You can securely connect to your VPC by configuring an EIC Endpoint with your existing client tools or the
+Console/AWS CLI. Visit the <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Connect-using-EC2-Instance-Connect-Endpoint.html" target="new">EIC Endpoint documentation</a> to learn more.

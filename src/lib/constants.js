@@ -12,6 +12,7 @@ import logoSAPro from '@/images/logos/sa-professional.png';
 import logoSecurity from '@/images/logos/security-specialty.png';
 import logoPractitioner from '@/images/logos/practitioner.png';
 
+
 export const WORK = [
   {
     company: 'Tech9',
@@ -291,7 +292,7 @@ export const TOOLS_AND_TECH = [
         href: 'https://kubernetes.io/',
         description:
             ' I&apos;m extensively using K8s for building applications.\n' +
-            '              Have a great experieice of using it with AWS EKS. \n' +
+            '              Having a great experieice of using it with AWS EKS. \n' +
             '              I have created many services and applications into K8s' +
             '              <b>I am also a Certified Kubernetes Application Developer.</b>',
       },

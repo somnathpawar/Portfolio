@@ -1,0 +1,103 @@
+import Image from 'next/image'
+import {BlogLayout} from '@/components/BlogLayout'
+import BlogReservationCosting from "../../images/photos/aws-reserved-instances.png";
+import BlogReservationOverview from "../../images/photos/reservation-overview.png";
+import BlogReservationEC2 from "../../images/photos/aws-ec2-savings.png";
+import BlogReservationRDS from "../../images/photos/aws-rds-savings.png";
+import BlogReservationRedshift from "../../images/photos/aws-redshift-savings.png";
+
+export const meta = {
+    author: 'Somnath Pawar',
+    email: 'info.somnathpawar@gmail.com',
+    date: '2023-06-22',
+    title: 'How to save cost on running AWS Instances?',
+    description:
+        'Reserving the long-running and crucial instances for your AWS hosted applications, can save you a lot of money and give a disaster recovery options.',
+}
+
+export default (props) => <BlogLayout meta={meta} {...props} />
+
+Reserving the long-running and crucial instances for your AWS hosted applications, can save you a lot of money and give a disaster
+recovery options. Reserved capacity is available for specific services such as Amazon EC2, Amazon RDS, and Redshift.
+
+Reserved Instances provide you with significant savings on your Amazon EC2, RDS & Redshift costs compared to On-Demand Instance pricing.
+You can save up to 72% on equal on-demand capacity by using Reserved Instances. Reserved Instances are not physical instances, but rather a billing discount applied to the use of On-Demand Instances in your account. Consider it as a discount coupon for which you already paid for.
+
+## Things to consider before making reservations:
+First of all identifying idle or underutilized EC2 instances is a simple method to reduce EC2 expenditures. You can then cut costs
+by discontinuing or lowering them. Once you identify the application-critical instances, you need to carefully choose following attributes
+ that best fits your applications needs.
+1. <b>Instance Type</b>: Instance types are different combinations of CPU, memory, storage, and networking capabilities that allow you to
+choose the best mix of resources for your applications.
+2. <b>Tenancy</b>: Default (shared) or dedicated. Tenancy defines how EC2 instances are distributed across physical hardware and affects pricing.
+3. <b>Platform</b>: Linux/UNIX, SUSE Linux, Red Hat Enterprise Linux, Microsoft Windows Server, and Microsoft SQL Server
+4. <b>Instance Scope</b> (Region/AZ): The scope is either regional or zonal. Carefully identify your need of reservation scope and then go for one of them. Here is a difference: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/reserved-instances-scope.html#reserved-instances-regional-zonal-differences. In region scoped instance, the Reserved Instance discount applies to instance usage within the instance family, regardless of size. e.g. If you have reserved for c5.large, and in future need to use c5.xlarge, the discount still applies here. That is not possible with zone scoped reservation.
+5. <b>Reservation Term</b>: One year or three years. The longer the term, the greater the savings.
+6. <b>RI Contract Type</b>:
+- Standard: These provide the most significant discount (up to 72% off On-Demand) and are best suited for steady-state usage.
+    In case of EC2, it enables you to modify Availability Zone, scope, networking type, and instance size (within the same instance type)
+     of your Reserved Instance.
+- Convertible: These provide a discount (up to 54% off On-Demand) and the capability to change the attributes of the RI. In case of EC2, it enables you to exchange one or more Convertible Reserved Instances for another Convertible Reserved Instance with a different configuration, including instance family, operating system, and tenancy. Like Standard RIs, Convertible RIs are best suited for steady-state usage.
+7. <b>Instances Reservation limit</b>: AWS has set default quota for reserving instances on monthly basis.
+   - Regional Reservations: 20 RIs/month
+   - Zonal (AZ) Reservations: 20 RIs/month per zone
+   You can exceed these default restrictions by contacting AWS support and requesting that your account’s limits be lifted through Service
+    Quotas service in the AWS account console.
+
+## What are the benefits of reserving instances?
+1. <b>Savings</b>: By reserving instances, you can save a large amount of money that would otherwise be spent on On-Demand instances.<br/>
+   e.g. Assume you have the following EC2 instance running:<br/>
+   Type: c5.xlarge<br/>
+   Platform: Linux<br/>
+   Region: us-east-1<br/>
+   Tenancy: Default (Shared)<br/>
+   Here is the example cost table for reference.<br/>
+<figure key='aws' className="break-inside-avoid-column">
+  <Image src={BlogReservationCosting} alt="AWS Reserved Instances Costing" style={{borderRadius: "0"}} />
+  <figcaption>
+    Hourly rates are as per [Amazon EC2 Reserved Instances Pricing](https://aws.amazon.com/ec2/pricing/reserved-instances/pricing/) page on 22nd, Jun 2023
+  </figcaption>
+</figure>
+
+You can see that depending on the reservation payment option and term you select, you can save a significant amount of money.
+You can get deeper discount up to 72% by using instance savings plan when you only need one instance family and region.
+
+2. <b>Capacity reservation</b>: On-Demand Capacity Reservations enable you to reserve compute capacity for your EC2 instances in a
+specific Availability Zone for any duration. Capacity reservations mitigate against the risk of being unable to get On-Demand capacity in case of capacity constraints and ensure that you always have access to EC2 capacity when you need it, for as long as you need it.
+
+## How to track reserved instances usage:
+AWS has provided a console on AWS Cost Management where you can find your reserved instances utilization & coverage reports.
+<figure key='reservation-overview' className="break-inside-avoid-column">
+  <Image src={BlogReservationOverview} alt="AWS Reserved Instances Overview" style={{borderRadius: "0"}} />
+  <figcaption>
+    <center>Showing a overview for last 30 days</center>
+  </figcaption>
+</figure>
+<figure key='ec2-reservation-savings' className="break-inside-avoid-column">
+  <Image src={BlogReservationEC2} alt="AWS EC2 Instances savings" style={{borderRadius: "0"}} />
+  <figcaption>
+    <center>Showing EC2 instances utilization & savings (30 days)</center>
+  </figcaption>
+</figure>
+<figure key='rds-reservation-savings' className="break-inside-avoid-column">
+  <Image src={BlogReservationRDS} alt="AWS RDS Instances savings" style={{borderRadius: "0"}} />
+  <figcaption>
+    <center>Showing RDS instances utilization & savings (30 days)</center>
+  </figcaption>
+</figure>
+<figure key='redshift-reservation-savings' className="break-inside-avoid-column">
+  <Image src={BlogReservationRedshift} alt="AWS Redshift Nodes savings" style={{borderRadius: "0"}} />
+  <figcaption>
+    <center>Showing Redshift nodes utilization & savings (30 days)</center>
+  </figcaption>
+</figure>
+
+## The Conclusion:
+You can reserve instances based on the needs of your application and the predictability of your infrastructure. By reserving
+application-critical instances that would otherwise need to run for a longer period of time, you can save a significant amount of money.
+When you reserve, your existing instances that fit the reservation attributes will begin at the discounted price right away. So, assess
+your apps, their requirements, and your budget to save money on operating instances. Tech9 has recently reserved 48 instances for one
+of clients account and it should be saving around $50k/year for the business.
+
+References: This article is originally published on <a href="https://medium.com/techhappily/how-to-save-cost-on-running-aws-instances-16eea4b7523" target="new">medium</a> by me.
+

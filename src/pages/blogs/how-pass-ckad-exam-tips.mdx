@@ -1,0 +1,99 @@
+import Image from 'next/image'
+import {BlogLayout} from '@/components/BlogLayout'
+import ImageCKAD from '@/images/ckad-curriculum.png';
+
+export const meta = {
+    author: 'Somnath Pawar',
+    email: 'info.somnathpawar@gmail.com',
+    date: '2022-04-25',
+    title: 'How to pass CKAD exam - Tips & Tricks',
+    description:
+        'Kubernetes, also known as K8s, is an popular open-source system for automating deployment, scaling, and management of containerized applications.. In this article, I will show you how to prepare & pass an official CKAD exam.',
+}
+
+export default (props) => <BlogLayout meta={meta} {...props} />
+
+I recently passed the CKAD certification exam conducted by the Cloud Native Computing Foundation (CNCF) and Linux Foundation. So this article is about my experience regarding the preparation and passing it.
+
+    You can find the exam curriculum at [https://github.com/cncf/curriculum/tree/master](https://github.com/cncf/curriculum/tree/master)
+    <Image src={ImageCKAD} alt="CKAD Curriculum" />
+
+This is a remotely [proctored](https://www.onlineexambuilder.com/knowledge-center/exam-knowledge-center/proctored-exam-meaning/item12515) exam which consists of 16 to 19 practical tasks to be completed within 2 hours.
+This exam tests you for skills, knowledge and competencies to perform the responsibilities of a Kubernetes Application Developer. It checks if you can define application resources and use core primitives to build, monitor, and troubleshoot scalable applications and tools in Kubernetes.
+
+## Here is my preparation and exam attempt history:
+- I have been using Kubernetes since 3 years for professional use. I thought it would not take much effort to pass this exam. I was completely WRONG! Though I had most of the knowledge I needed to clear an exam, I did not realise just how fast I need to be. Unfortunately, I didn't make all the questions into 120 mins of time, hence ended up on 57%.
+- It was heartbreaking but I knew this is one of the toughest exams as it tests you with your practical knowledge and with speed instead of just having a MCQ kind of patterns. May be that's why they give you second free attempt to clear an exam.
+- This time I decided to work on my speed, and some of concepts which troubled me while my first attempt. I followed Mumshad Mannambeth's udemy course with 1.5x speed.
+- On the 4th day, 23th April 2022, I reattempted an exam, and this time I cleared it with 84% :)
+
+## Study Material:
+- Mumshad Mannambeth's udemy [course](https://www.udemy.com/course/certified-kubernetes-application-developer/) & [KodeKloud](https://kodeKloud.com) labs. Both the resources are simply great!
+- killer.sh mock exams (You get two sessions after purchasing an exam) - They are tough than an actual exam but really helps to practice solving the questions within given time period.
+- Github - mock questions - [https://github.com/dgkanatsios/CKAD-exercises](https://github.com/dgkanatsios/CKAD-exercises)
+
+## Here are some tips which truly helped me converting my 57% to 84% just in 3 days.
+- The exam is all about your speed of implementing the kubernets based tasks. So along with your knowledge, you need to beat the 120 mins of timer and solve 16-19 questions. To do so, you need use some shortcuts for frequently used commands and attributes. Creating following aliases at the start of an exam will save you lots of time (Don't bother to spend a min or so to do that):
+```js
+alias k=kubect
+alias kn='k config set-context --current --namespace '
+alias kc='k config get-contexts'
+alias kgp='k get po'
+alias kdp='k describe po'
+alias tp='k run tmp --image=nginx/alpine --restart Never --rm -i'
+export do='--dry-run=client -o yaml'
+export now='--force --grace-period=0'
+```
+You can add them into bashrc / zshrc as per you terminal and then source it in current session. Or even you can add directly on command line for your one time session.
+- Enable kubectl autocomplete and use imperative commands as much as possible than writing whole yaml definition files by your own. This would save you a lot of time to copy/paste the yaml definition files. Refer: https://kubernetes.io/docs/reference/kubectl/cheatshee
+- Just to show you power of imperative command, following whole definition snippet can be created with just one command: <br/>
+  <b>k create deploy my-deploy --image=nginx --replicas=2 --dry-run=client -o yaml -- sleep 3600</b>
+```js
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: my-deploy
+  name: my-deploy
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: my-deploy
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: my-deploy
+    spec:
+      containers:
+      - command:
+        - sleep
+        - "3600"
+        image: nginx
+        name: nginx
+        resources: {}
+status: {}
+```
+- Get comfortable with vim editor and terminal. The exam environment is within a Linux terminal, so there is no GUI.
+- You are allowed to use one browser tab to access the official Kubernetes documentation. I would recommend to go with imperative commands way but in case you are not aware of the right command attributes to use, use as much documentation as possible. Don’t try to memorize YAML syntax of Kubernetes objects. You can take quick help of command line help using `kubectl --help` or using `kubectl explain` commands without accessing the documentation in the browser.
+- Next challenge is copy pasting the content into yaml files. YAMLs are so much indentation sensitive, white spaces has meaning, so you might stuck with them if you just copy paste content from documentation. Any additional tab or space could waste lots of time to fix it. So to avoid that, you can set some configuration for vim editor beforehand.
+```js
+$ cat >> ~/.vimrc
+  set expandtab
+  set shiftwidth=2
+  set tabstop=2
+^D
+```
+- Read the questions very carefully, questions may have more than one sub tasks to solve, Don't miss those sub tasks, they will cost the partial marks for you.
+- Avoid spending too much of a time on questions with less than or equal to 4% of weight. You can give one attempt and if it fails, just flag that question to revisit and move on. May be sparing time for big/complex tasks with 7/8% of weight will give you more chance to clear an exam.
+- Try to complete all the questions into first 90 minutes. So that you will have 30 mins to revisit the question you marked earlier. I did the same, I guess I cleared the first round within just 75/80 mins and I had enough time to revisit all the questions again.
+- Make sure you are into right cluster and context before implementing the solutions. If you fail so, even if your solution is correct, you will loose the marks.
+
+## Result
+You will be notified after 24 hours about your exam result.
+
+References: This article is originally published on [linkedin](https://www.linkedin.com/pulse/how-pass-ckad-exam-tips-tricks-somnath-pawar/)
+

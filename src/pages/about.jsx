@@ -12,7 +12,7 @@ import {
   MailIcon,
   PhoneIcon,
 } from '@/components/Icons';
-import portraitImage from '@/images/profile.jpeg';
+import portraitImage from '@/images/profile.jpg';
 
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
@@ -58,26 +58,27 @@ export default function About() {
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
                 I&apos;ve loved making things for as long as I can remember, I
-                wrote my first program in BASIC when I was 11 years old.
+                wrote my first program in BASIC.
               </p>
               <p>
                 The only thing I loved more than computers as a kid was History
-                and Physics. I have always been fascinated by the way the world
+                and Mathematics. I have always been fascinated by the way the world
                 has traveled through time and how it works. Programming is the
                 perfect marriage of these two passions. I get to build things
                 that change the world and understand how they work.
               </p>
               <p>
-                Professionally, I&apos;ve been a software engineer for over 10
+                Professionally, I&apos;ve been a software engineer for over 15
                 years. I&apos;ve worked at startups and large companies, and
-                I&apos;ve worked on everything from mobile apps to backend
-                services including cloud. I&apos;ve also been a mentor and a
+                I&apos;ve worked on everything from mobile apps, web apps to backend
+                services including cloud & devops. I&apos;ve also been a mentor and a
                 tech lead across multiple teams.
               </p>
               <p>
-                Today, I’m a software engineer at Tech9, where I work with
-                variety of technologies including JS, React, Next, Remix,
-                GraphQL, Node, Go and AWS.
+                Today, I’m a Sr. Solutions Architect at Tech9, where I work with
+                variety of technologies including PHP, Golang, JS, AngularJS, AWS, Kubernetes, Docker, Ansible, Terraform, CDK, Bash,
+                PostgreSQL, MongoDB, Redis and RabbitMQ. I am enthusiastic into cloud computing and devops areas, achieved 7x AWS
+                certifications and Kubernetes CKAD certification.
               </p>
             </div>
           </div>
