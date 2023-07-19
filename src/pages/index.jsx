@@ -163,8 +163,8 @@ export default function Home({ blogs }) {
                         entrepreneur.
                     </h1>
                     <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-                        Greetings, I&apos;m Somnath, a seasoned software developer and
-                        creative inventor residing in Pune. With a 16 years of professional
+                        Greetings, I&apos;m Somnath, a seasoned software developer, self-motivated and
+                        creative person residing in Pune. With a 16 years of professional
                         experience under my belt, I specialize in crafting intricate
                         applications and dynamic websites that thrive in high-speed,
                         collaborative settings. My expertise lies in an array of programming
