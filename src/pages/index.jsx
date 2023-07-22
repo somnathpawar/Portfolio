@@ -132,7 +132,7 @@ function Resume({ resume, title, showDownload }) {
             </ol>
             {showDownload && (
                 <Button
-                    href="https://drive.google.com/file/d/1BuryeHO2HW8pNF_j5UvdAR45dudyzANP/view?usp=sharing"
+                    href="https://drive.google.com/file/d/16g3DM0SSAhTm53hjjR-HLtHzQe526mj_/view?usp=sharing"
                     target="_blank"
                     variant="secondary"
                     className="group mt-6 w-full"
