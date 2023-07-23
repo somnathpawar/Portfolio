@@ -103,7 +103,7 @@ export const CERTIFICATIONS = [
     logo: logoSysOps,
     start: 'Jun 2021',
     end: 'Jun 2024',
-    href: 'https://www.credly.com/badges/b2070a20-549b-4e4b-9dca-af07a7627fe1 ',
+    href: 'https://www.credly.com/badges/b2070a20-549b-4e4b-9dca-af07a7627fe1',
     credential: 'C4C0TCYDDMR1Q7KR',
   },
   {
@@ -185,21 +185,29 @@ export const TOOLS_AND_TECH = [
           '              Created lots of web application/sites into various domains',
       },
       {
+        id: 2,
+        title: 'Python',
+        href: 'https://python.org',
+        description:
+          'Python is highly efficient language. Python\'s clean object-oriented design provides enhanced process control, \n'+
+          ' and the language is equipped with excellent text processing and integration capabilities. \n'
+      },
+      {
         id: 3,
         title: 'ROR',
         href: 'https://go.dev/',
         description:
-          'Ruby on Rails is a great web application building framework,  I used it for few projects.',
+          'Ruby on Rails is a great web application building framework, I used it for few projects.',
       },
       {
-        id: 3,
+        id: 4,
         title: 'GoLang',
         href: 'https://go.dev/',
         description:
             'Recently I stated using GoLang into existing project where I wanted the performance',
       },
       {
-        id: 4,
+        id: 5,
         title: 'Bash',
         href: 'https://www.rust-lang.org/',
         description:
