@@ -29,7 +29,7 @@ export const WORK = [
     title: 'Principal Software Engineer',
     logo: logoTech9,
     start: 'Non 2018',
-    end: 'July 2022',
+    end: 'Jul 2022',
   },
   {
     company: 'Tech9',
