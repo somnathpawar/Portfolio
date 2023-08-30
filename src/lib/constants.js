@@ -18,7 +18,7 @@ export const WORK = [
     company: 'Tech9',
     title: 'Sr. Solutions Architect',
     logo: logoTech9,
-    start: 'Feb 2022',
+    start: 'Aug 2022',
     end: {
       label: 'Present',
       dateTime: new Date().getFullYear(),
