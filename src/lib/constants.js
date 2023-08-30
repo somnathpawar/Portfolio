@@ -18,21 +18,32 @@ export const WORK = [
     company: 'Tech9',
     title: 'Sr. Solutions Architect',
     logo: logoTech9,
-    start: 'Feb 2017',
+    start: 'Feb 2022',
     end: {
       label: 'Present',
       dateTime: new Date().getFullYear(),
     },
   },
   {
+    company: 'Tech9',
+    title: 'Principal Software Engineer',
+    logo: logoTech9,
+    start: 'Non 2018',
+    end: 'July 2022',
+  },
+  {
+    company: 'Tech9',
+    title: 'Lead Software Engineer',
+    logo: logoTech9,
+    start: 'Feb 2017',
+    end: 'Oct 2018',
+  },
+  {
     company: 'Quinstreet Software Private Limited',
     title: 'Technical Lead',
     logo: logoQS,
     start: 'Jan 2012',
-    end: {
-      label: 'Jan 2017',
-      dateTime: new Date().getFullYear(),
-    },
+    end: 'Jan 2017',
   },
   {
     company: 'Idhasoft',
