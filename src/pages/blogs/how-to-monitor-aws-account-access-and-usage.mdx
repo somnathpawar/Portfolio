@@ -1,0 +1,42 @@
+import Image from 'next/image'
+import {BlogLayout} from '@/components/BlogLayout'
+import ImageAWSIam from "../../images/photos/aws-iam.png";
+
+export const meta = {
+    author: 'Somnath Pawar',
+    email: 'info.somnathpawar@gmail.com',
+    date: '2024-02-12',
+    title: 'How to Monitor AWS Account Access and Usage',
+    description:
+        'Reserving the long-running and crucial instances for your AWS hosted applications, can save you a lot of money and give a disaster recovery options.',
+}
+
+export default (props) => <BlogLayout meta={meta} {...props} />
+
+<Image src={ImageAWSIam} alt="AWS IAM" />
+Least privilege is one of the Amazon Web Services (AWS) Well-Architected recommended practices for building safely in the cloud.
+While maintaining permissions/access levels for your IAM users/roles, you must ensure that you do not allocate more than they require.
+It becomes more difficult to keep track of these items as your consumption increases. e..g Let's say someone needing the admin permission for time being but later they don't need it. So you need to know unused access and get rid of them time to time.
+
+AWS has offered a useful capability for maintaining control over this, known as the "[IAM Access Analyzer](https://aws.amazon.com/iam/access-analyzer/)". IAM Access Analyzer helps you
+identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, shared with an external entity.
+This continuous monitoring and recommendation feature appears to be an excellent approach to learn about the gaps in your account's
+access levels and to help fine-tune the permissions on a regular basis.
+
+
+AWS Identity and Access Management Access Analyzer provides the following capabilities:
+- IAM Access Analyzer external access analyzers help identify resources in your organization and accounts that are shared with an external entity.
+- IAM Access Analyzer unused access analyzers help identify unused access in your organization and accounts.
+- IAM Access Analyzer validates IAM policies against policy grammar and AWS best practices.
+- IAM Access Analyzer custom policy checks help validate IAM policies against your specified security standards.
+- IAM Access Analyzer generates IAM policies based on access activity in your AWS CloudTrail logs.
+
+AWS costs nothing for using capability of tracking and monitoring the access and usage of your account. It is a free service. For tracking
+unused access, it would bill you a nominal fee $0.20 per IAM user or IAM role analysed per month though. Which is too less considering the benefits it provides.
+
+There are other ways to track the usage and access of your account. You can use AWS CloudTrail, AWS Config, AWS CloudWatch etc services to keep
+monitoring your accounts. But IAM Access Analyzer is a dedicated service for this purpose and it is very easy to use and understand.
+
+## Conclusion
+IAM Access Analyzer is a very useful service to monitor the access and usage of your AWS account. It is a free service and it is very easy to use.<br/>
+Documentation: [AWS IAM Access Analyzer](https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html)
