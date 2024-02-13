@@ -8,14 +8,14 @@ export const meta = {
     date: '2024-02-12',
     title: 'How to Monitor AWS Account Access and Usage',
     description:
-        'Reserving the long-running and crucial instances for your AWS hosted applications, can save you a lot of money and give a disaster recovery options.',
+        'Least privilege is one of the Amazon Web Services (AWS) Well-Architected recommended practices for building safely in the cloud. While maintaining permissions/access levels for your IAM users/roles, you must ensure that you do not allocate more than what they require.',
 }
 
 export default (props) => <BlogLayout meta={meta} {...props} />
 
 <Image src={ImageAWSIam} alt="AWS IAM" />
 Least privilege is one of the Amazon Web Services (AWS) Well-Architected recommended practices for building safely in the cloud.
-While maintaining permissions/access levels for your IAM users/roles, you must ensure that you do not allocate more than they require.
+While maintaining permissions/access levels for your IAM users/roles, you must ensure that you do not allocate more than what they require.
 It becomes more difficult to keep track of these items as your consumption increases. e..g Let's say someone needing the admin permission for time being but later they don't need it. So you need to know unused access and get rid of them time to time.
 
 AWS has offered a useful capability for maintaining control over this, known as the "[IAM Access Analyzer](https://aws.amazon.com/iam/access-analyzer/)". IAM Access Analyzer helps you
