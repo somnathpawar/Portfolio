@@ -43,7 +43,7 @@ These commands will reclaim the storage space that was being used by the stopped
 Now, let's create a simple shell script to automate the process and then we will schedule it to run at a specific time using cronjob.
 ```bash
 cd /etc/cron.daily
-sudo nano docker-prune
+sudo nano docker-cleanup
 ```
 Once you are in the file, add the following content:
 ```bash
@@ -53,7 +53,7 @@ docker system prune -af  --filter "until=$((7*24))h"
 Save the file and exit from it. This command will remove all unused images, networks, stopped containers and build cache that are older than 7 days. You can change the time value as per your requirement and containers update frequency you got.
 Now, let's make this file executable so OS can run this command inside it on daily basis.
 ```bash
-sudo chmod +x /etc/cron.daily/docker-prune
+sudo chmod +x /etc/cron.daily/docker-cleanup
 ```
 That's it. Docker will now execute this command daily. You can change the time interval as per your requirement.
 There are cron.hourly/cron.daily/cron.weekly/cron.monthly directories in /etc directory. You can put your script in the appropriate directory to run it at the desired interval.
@@ -62,7 +62,7 @@ To insure the command will run while daily cronjob, you can test the following c
 ```bash
 run-parts /etc/cron.daily
 ```
-This will run all the scripts in the /etc/cron.daily directory. We added one shell script "docker-prune" above in this directory to clean up the unused docker content.
+This will run all the scripts in the /etc/cron.daily directory. We added one shell script "docker-cleanup" above in this directory to clean up the unused docker content.
 
 ## Conclusion
 In this blog post, we learned how to clean up unused Docker images and containers automatically using a simple shell script and cronjob. This will help you to keep your EC2 instance clean and free up space on your attached volume.
