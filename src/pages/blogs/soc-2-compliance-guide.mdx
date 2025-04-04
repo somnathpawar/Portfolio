@@ -1,0 +1,130 @@
+import Image from 'next/image'
+import { BlogLayout } from '@/components/BlogLayout'
+import ImageSoc2Complaince from "../../images/photos/soc-2-compliance.jpeg";
+
+export const meta = {
+    author: 'Somnath Pawar',
+    email: 'info.somnathpawar@gmail.com',
+    date: '2025-04-04',
+    title: 'SOC 2 Compliance Guide: Everything You Need to Know',
+    description:
+        'A comprehensive guide to SOC 2 compliance, SOC 2 audits, and the controls checklist for SOC 2 compliance certificates.',
+}
+
+export default (props) => <BlogLayout meta={meta} {...props} />
+
+<Image src={ImageSoc2Complaince} alt="SOC 2 Compliance"/>
+
+## What is SOC 2 Compliance?
+
+SOC 2 (Service Organization Control 2) is a cybersecurity compliance framework developed by the **American Institute of Certified Public Accountants (AICPA)**. It is specifically designed for service organizations that store, process, or manage customer data. SOC 2 ensures that these organizations adhere to the **Trust Services Criteria (TSC)**, which include the following principles:
+
+1. **Security**: Protecting systems and data against unauthorized access.
+2. **Availability**: Ensuring systems are operational and meet agreed-upon performance levels.
+3. **Processing Integrity**: Guaranteeing that system processing is complete, valid, accurate, and authorized.
+4. **Confidentiality**: Protecting sensitive information from unauthorized disclosure.
+5. **Privacy**: Ensuring personal information is collected, used, retained, and disposed of in compliance with privacy policies.
+
+SOC 2 compliance is not a one-size-fits-all framework. It is tailored to each organization’s unique operations and systems, making it highly flexible and adaptable. Achieving SOC 2 compliance demonstrates an organization’s commitment to securely managing customer data, building trust with clients, and meeting regulatory requirements.
+
+---
+
+## What is a SOC 2 Audit?
+
+A **SOC 2 Audit** is an independent assessment conducted by a certified third-party auditor to evaluate whether an organization complies with the Trust Services Criteria. The audit process typically involves the following steps:
+
+1. **Scoping**: Defining the systems, processes, and services that will be evaluated during the audit.
+2. **Readiness Assessment**: Conducting a pre-audit review to identify gaps in compliance and prepare the organization for the formal audit.
+3. **Evidence Collection**: Gathering documentation and evidence to demonstrate compliance with the Trust Services Criteria. This includes system architecture diagrams, monitoring reports, access control policies, and more.
+4. **Testing**: The auditor tests the controls in place to ensure they are operating effectively. This may involve reviewing logs, interviewing employees, and inspecting configurations.
+5. **Reporting**: After the audit, the auditor provides a SOC 2 report, which includes:
+   - **Type I Report**: Evaluates the design of controls at a specific point in time.
+   - **Type II Report**: Evaluates the operational effectiveness of controls over a defined period (e.g., 6 or 12 months).
+
+The SOC 2 audit process is rigorous and requires organizations to implement robust security measures, document their processes, and continuously monitor their systems.
+
+---
+
+## General Controls Checklist for Web apps for SOC 2 Compliance
+
+### **System Architecture Requirements**
+1. **Database Encryption**  
+   - Provide evidence that the database is encrypted.
+
+2. **SSL/TLS Encryption**  
+   - Provide evidence that secure communication tunnels are in place.
+
+3. **Firewall Utilization**  
+   - Provide a screenshot of the firewall ruleset for the production environment.
+
+4. **Load Balancing**  
+   - Provide a configuration screenshot or file displaying that load balancing is in place.
+
+5. **Network Diagram**  
+   - Provide a non-technical network diagram (JPEG/Visio/PNG) illustrating a conceptual view of sites and basic topology.
+
+6. **Path of Authentication Method**  
+   - Describe how users authenticate to the production servers.
+
+7. **Separate Environments**  
+   - Provide a screenshot evidencing that production is separate from development and QA environments.
+
+8. **Antivirus Protection (Production Servers)**  
+   - Provide evidence of the use of an antivirus system on production servers.  
+   - Provide configuration screenshots evidencing:  
+     - Updates  
+     - Scanning  
+   - **Recommendation**: If you are using AWS Cloud, use AWS GuardDuty service.
+
+---
+
+### **System Monitoring Requirements**
+1. **Monitoring Alerts**  
+   - Provide an example alert from the monitoring application generated when a threshold was exceeded.  
+   - Provide a configuration screenshot showing where alerts are sent.
+
+2. **Monitoring Reports**  
+   - Provide a sample of the reports the monitoring application can generate.
+
+3. **Network and System Monitoring**  
+   - Provide screenshots of the tools used for monitoring network and system capacity levels.
+
+4. **Server Patching**  
+   - Provide evidence displaying that patching on servers has been performed recently.
+
+5. **Changes and Event Logging**  
+   - Provide a sample of alerts or reports showing event logging (e.g., user login, wrong password attempts, deletions).
+
+6. **File Integrity Checking**  
+   - Provide evidence of the use of a file integrity checking system on production systems.
+
+7. **Security Bulletin Subscription**  
+   - Provide screenshots evidencing that management is subscribed to IT security bulletins.  
+   - **Examples**: US-CERT.gov, SANS.org.  
+   - **Recommendation**: AWS Security Bulletins (free with AWS account).
+
+8. **Vulnerability Test Results**  
+   - Provide the most recent results of vulnerability assessments performed.  
+   - **Recommendation**: Use tools like Intruder.io or Qualys.  
+   - **Expected Standards**: OWASP Top 10, CVE Database, CIS Benchmarks, ISO 27001, PCI DSS, GDPR, HIPAA, etc.
+
+9. **Backup Job Monitoring & Notifications**  
+   - Provide an example alert from the backup system.  
+   - Provide a screenshot of backup application configurations demonstrating automated notifications.
+
+10. **Restore Testing**  
+    - Provide documentation (e.g., a ticket) of restore job completion, including screenshots to evidence a successful restore.  
+    - **Recommendations**:  
+      - AWS Backup  
+      - RDS/Aurora database snapshots restore process  
+      - For self-hosted databases, implement a custom job that is tested and successfully restores the database during incident recovery.
+
+---
+
+## Conclusion
+
+SOC 2 compliance is essential for organizations that handle customer data, as it demonstrates a commitment to security, privacy, and trust. By understanding the SOC 2 framework, preparing for audits, and obtaining a SOC 2 compliance certificate, organizations can build stronger relationships with clients and stakeholders while ensuring their systems are secure.
+
+If you’re looking for assistance with SOC 2 compliance, feel free to reach out. Let’s work together to secure your systems and achieve compliance!
+
+---
