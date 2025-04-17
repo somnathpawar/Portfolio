@@ -11,6 +11,7 @@ import logoSysOps from '@/images/logos/sysops-admin.png';
 import logoSAPro from '@/images/logos/sa-professional.png';
 import logoSecurity from '@/images/logos/security-specialty.png';
 import logoPractitioner from '@/images/logos/practitioner.png';
+import logoAIPractitioner from '@/images/logos/AI-Practitioner.png';
 
 
 export const WORK = [
@@ -93,7 +94,7 @@ export const CERTIFICATIONS = [
   {
     company: 'AWS Certified Security - Specialty',
     title: 'Amazon Web Services',
-    logo: logoSecurity,
+    logo: logoAIPractitioner,
     start: 'Dec 2022',
     end: 'Dec 2025',
     href: 'https://www.credly.com/badges/01a6cbc7-4fca-4d9d-a687-1fa190c07e31',
