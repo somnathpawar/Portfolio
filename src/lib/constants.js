@@ -85,7 +85,7 @@ export const CERTIFICATIONS = [
   {
     company: 'AWS Certified AI Practitioner',
     title: 'Amazon Web Services',
-    logo: logoSecurity,
+    logo: logoAIPractitioner,
     start: 'April 2025',
     end: 'April 2028',
     href: 'https://www.credly.com/badges/b59fe05b-3861-45bc-9211-e0a19a0617cb',
@@ -94,7 +94,7 @@ export const CERTIFICATIONS = [
   {
     company: 'AWS Certified Security - Specialty',
     title: 'Amazon Web Services',
-    logo: logoAIPractitioner,
+    logo: logoSecurity,
     start: 'Dec 2022',
     end: 'Dec 2025',
     href: 'https://www.credly.com/badges/01a6cbc7-4fca-4d9d-a687-1fa190c07e31',
