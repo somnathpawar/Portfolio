@@ -60,6 +60,7 @@ function ResumeListItem({ role }) {
         <li>
             <Link
                 href={role?.href || '#'}
+                target={role?.href ? '_blank' : undefined}
                 className={clsx(
                     'flex gap-4',
                     role?.href ? 'cursor-pointer' : 'cursor-auto'
