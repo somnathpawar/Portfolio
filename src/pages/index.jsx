@@ -160,7 +160,7 @@ export default function Home({ blogs }) {
                         applications and dynamic websites that thrive in high-speed,
                         collaborative settings. My virtuosity lies in an array of programming
                         languages and multiple technologies, including but not limited to PHP, ROR, JavaScript
-                        (JS), GoLang, DevOps, Kubernetes, Cloud Architecting & Security. Not to brag <Image style={{display: "inline", width: "20px"}} src={WinkImage} alt="wink"/> I am proficient in AWS and hold 7x AWS Certifications.
+                        (JS), GoLang, DevOps, Kubernetes, Cloud Architecting & Security. Not to brag <Image style={{display: "inline", width: "20px"}} src={WinkImage} alt="wink"/> I am proficient in AWS and hold 8x AWS Certifications.
                     </p>
                     <div className="mt-6 flex gap-6">
                         <SocialLink

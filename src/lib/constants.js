@@ -82,12 +82,21 @@ export const WORK = [
 
 export const CERTIFICATIONS = [
   {
+    company: 'AWS Certified AI Practitioner',
+    title: 'Amazon Web Services',
+    logo: logoSecurity,
+    start: 'April 2025',
+    end: 'April 2028',
+    href: 'https://www.credly.com/badges/b59fe05b-3861-45bc-9211-e0a19a0617cb',
+    credential: '09bbbcf950334441a8ca725f8933e121',
+  },
+  {
     company: 'AWS Certified Security - Specialty',
     title: 'Amazon Web Services',
     logo: logoSecurity,
     start: 'Dec 2022',
     end: 'Dec 2025',
-    href: 'https://www.credly.com/earner/earned/badge/01a6cbc7-4fca-4d9d-a687-1fa190c07e31',
+    href: 'https://www.credly.com/badges/01a6cbc7-4fca-4d9d-a687-1fa190c07e31',
     credential: '42MHH3NC5JE11CCR',
   },
   {
@@ -151,7 +160,7 @@ export const CERTIFICATIONS = [
     logo: logoTechAccred,
     start: 'Feb 2023',
     end: '',
-    href: 'https://www.credly.com/earner/earned/badge/7b1ded70-86b7-4cf0-afa7-fe894ad830a3',
+    href: 'https://www.credly.com/badges/7b1ded70-86b7-4cf0-afa7-fe894ad830a3',
     credential: 'RKHXX4WCMEE1QDWW',
   },
 ];
@@ -302,7 +311,7 @@ export const TOOLS_AND_TECH = [
         href: 'https://aws.amazon.com/',
         description:
           ' I&apos;ve extensively used AWS for building and deploying\n' +
-          '              applications with several AWS services. I&apos;m having 7x \n' +
+          '              applications with several AWS services. I&apos;m having 8x \n' +
           '              <b>AWS certifications including top ones such as Solutions Architect Professional & Security Specialty.</b>',
       },
       {
