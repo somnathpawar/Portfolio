@@ -12,6 +12,9 @@ import logoSAPro from '@/images/logos/sa-professional.png';
 import logoSecurity from '@/images/logos/security-specialty.png';
 import logoPractitioner from '@/images/logos/practitioner.png';
 import logoAIPractitioner from '@/images/logos/AI-Practitioner.png';
+import logoHashiCorpTerraformAssociate from '@/images/logos/terraform-associate.png';
+import logoAWSKnowledgeArchitecture from '@/images/logos/aws-knowledge-architecture.png';
+import logoAWSKnowledgeCloudEssentials from '@/images/logos/aws-knowledge-cloud-essentials.png';
 
 
 export const WORK = [
@@ -119,6 +122,15 @@ export const CERTIFICATIONS = [
     credential: 'LF-cm3nzlagt6',
   },
   {
+    company: 'HashiCorp Certified: Terraform Associate',
+    title: 'HashiCorp',
+    logo: logoHashiCorpTerraformAssociate,
+    start: 'April 2025',
+    end: 'April 2027',
+    href: 'https://www.credly.com/badges/5a5031ad-ad66-4f6e-93f7-e2f4f38405d1',
+    credential: '5a5031ad-ad66-4f6e-93f7-e2f4f38405d1',
+  },
+  {
     company: 'AWS Certified SysOps Administrator – Associate',
     title: 'Amazon Web Services',
     logo: logoSysOps,
@@ -154,7 +166,6 @@ export const CERTIFICATIONS = [
     href: 'https://www.credly.com/badges/928b947c-4d9f-4fc6-8a84-1b36451e474f',
     credential: 'YGHS6VLLF1EQQZ98',
   },
-
   {
     company: 'AWS Partner: Accreditation (Technical)',
     title: 'Amazon Web Services',
@@ -163,6 +174,24 @@ export const CERTIFICATIONS = [
     end: '',
     href: 'https://www.credly.com/badges/7b1ded70-86b7-4cf0-afa7-fe894ad830a3',
     credential: 'RKHXX4WCMEE1QDWW',
+  },
+  {
+    company: 'AWS Knowledge: Architecting',
+    title: 'Amazon Web Services',
+    logo: logoAWSKnowledgeArchitecture,
+    start: 'Oct 2023',
+    end: '',
+    href: 'https://www.credly.com/badges/55d4181f-3bc8-4e7b-9d56-ef7f13023260',
+    credential: '55d4181f-3bc8-4e7b-9d56-ef7f13023260',
+  },
+  {
+    company: 'AWS Knowledge: Cloud Essentials',
+    title: 'Amazon Web Services',
+    logo: logoAWSKnowledgeCloudEssentials,
+    start: 'Oct 2023',
+    end: '',
+    href: 'https://www.credly.com/badges/bbddda40-7d99-4bea-8c35-2df25b97c780',
+    credential: 'bbddda40-7d99-4bea-8c35-2df25b97c780',
   },
 ];
 
